@@ -80,21 +80,21 @@ const Navbar = () => {
             {theme.palette.mode === "dark" ? (
               <DarkMode sx={{ fontSize: "25px" }} />
             ) : (
-              <LightMode sx={{ fontSize: "25px", color: dark }} />
+              <LightMode sx={{ color: dark, fontSize: "25px" }} />
             )}
           </IconButton>
           <Message sx={{ fontSize: "25px" }} />
           <Notifications sx={{ fontSize: "25px" }} />
           <Help sx={{ fontSize: "25px" }} />
-          <FormControl variant="standart" value={fullName}>
+          <FormControl variant="standard" value={fullName}>
             <Select
               value={fullName}
               sx={{
                 backgroundColor: neutralLight,
                 width: "150px",
                 borderRadius: "0.25rem",
-                p: "0.25rem 1 rem",
-                "& .MuiSvgIcon-root:": {
+                p: "0.25rem 1rem",
+                "& .MuiSvgIcon-root": {
                   pr: "0.25rem",
                   width: "3rem",
                 },
@@ -107,7 +107,7 @@ const Navbar = () => {
               <MenuItem value={fullName}>
                 <Typography>{fullName}</Typography>
               </MenuItem>
-              <MenuItem onClick={() => dispatch(setLogout())}>Lot Out</MenuItem>
+              <MenuItem onClick={() => dispatch(setLogout())}>Log Out</MenuItem>
             </Select>
           </FormControl>
         </FlexBetween>
@@ -155,21 +155,21 @@ const Navbar = () => {
               {theme.palette.mode === "dark" ? (
                 <DarkMode sx={{ fontSize: "25px" }} />
               ) : (
-                <LightMode sx={{ fontSize: "25px", color: dark }} />
+                <LightMode sx={{ color: dark, fontSize: "25px" }} />
               )}
             </IconButton>
             <Message sx={{ fontSize: "25px" }} />
             <Notifications sx={{ fontSize: "25px" }} />
             <Help sx={{ fontSize: "25px" }} />
-            <FormControl variant="standart" value={fullName}>
+            <FormControl variant="standard" value={fullName}>
               <Select
                 value={fullName}
                 sx={{
                   backgroundColor: neutralLight,
                   width: "150px",
                   borderRadius: "0.25rem",
-                  p: "0.25rem 1 rem",
-                  "& .MuiSvgIcon-root:": {
+                  p: "0.25rem 1rem",
+                  "& .MuiSvgIcon-root": {
                     pr: "0.25rem",
                     width: "3rem",
                   },
@@ -183,7 +183,7 @@ const Navbar = () => {
                   <Typography>{fullName}</Typography>
                 </MenuItem>
                 <MenuItem onClick={() => dispatch(setLogout())}>
-                  Lot Out
+                  Log Out
                 </MenuItem>
               </Select>
             </FormControl>
